@@ -1,0 +1,19 @@
+let img;
+let url =
+'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1200px-Flag_of_Denmark.svg.png';
+let url2 ='https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg' 
+
+function setup() {
+createCanvas(800, 800);
+
+loadImage(url, img => {
+	image(img, 60, 40, 100, 100);
+}
+	
+)
+  loadImage(url2, img => {
+	image(img, 200, 40, 100, 100);
+}
+	
+)
+}
