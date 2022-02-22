@@ -1,0 +1,37 @@
+function setup() {
+  createCanvas(800, 800);
+  strokeWeight(6);
+  background(195)
+  brushColor = color(50);
+
+}
+function draw() {
+  
+  textSize (32);
+
+  text("Press any key to erase", 300, 30)
+  
+   if (keyIsPressed === true) {
+    background (195) }
+  
+  if (mouseIsPressed) {
+    if (mouseX <= 50) {
+      if (mouseY <= 50) {
+        brushColor = color(255, 0, 0);
+      } else if (mouseY <= 100) {
+        brushColor = color(0, 255, 0);
+      } else if (mouseY <= 150) {
+        brushColor = color(0, 0, 255);
+      } 
+    }
+    stroke(brushColor)
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  }
+  stroke(color(0));
+  fill(255, 0, 0);
+  rect(0, 0, 50, 50);
+  fill(0, 255, 0);
+  rect(0, 50, 50, 50);
+  fill(0, 0, 255);
+  rect(0, 100, 50, 50);
+ }
