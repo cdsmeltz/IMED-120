@@ -1,0 +1,30 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+}
+
+//What I'm looking to do here is to create a function  that prompts the console to present the math on the background, any advice is appreciated, thank you Dr. Liu!
+
+const operator = prompt('Enter +, -, *, / depending on what type of math you want. Use * to calculate tip. If you want to use as a calculator, use any operator you want.');
+
+const firstnumber = parseFloat(prompt('Enter amount of bill, just the number '));
+const secondnumber = parseFloat(prompt('Enter desired tip amount. For example, 15% = .15 '));
+let finale;
+
+if (operator == '+') {
+    finale = firstnumber + secondnumber;
+}
+else if (operator == '-') {
+    finale = firstnumber - secondnumber;
+}
+else if (operator == '*') {
+    finale = firstnumber * secondnumber;
+}
+else {
+    finale = firstnumber / secondnumber;
+}
+
+console.log(`${firstnumber} ${operator} ${secondnumber} = ${finale}`);
