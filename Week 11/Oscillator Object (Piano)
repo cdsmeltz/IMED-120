@@ -1,0 +1,38 @@
+let oscil;
+
+function setup() {
+  createCanvas(700, 300);
+  oscil = new p5.Oscillator();
+  oscil.freq(440);
+}
+
+function draw() {
+  
+  background(220);
+  
+  //LOOPED WHITE KEYS
+  var x = 0;
+  while (x< width){
+  fill(255,255,255);
+  rect(x, 20, 50, 200);
+   x = x + 50;
+    
+  fill (0,0,0);
+  rect(25,20,45,120);
+  rect(80,20,45,120); 
+  rect(175,20,45,120);
+  rect(230,20,45,120);
+  rect(285,20,45,120);
+  rect(380,20,45,120);
+  rect(435,20,45,120);
+  rect(530,20,45,120);
+  rect(585,20,45,120);
+  rect(640,20,45,120);
+  }
+  function mousePressed() {
+    oscil.start();
+  }
+  function mouseReleased() {
+    oscil.stop();
+  }
+}
