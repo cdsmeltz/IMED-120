@@ -1,0 +1,16 @@
+var numb = [239, 255, 159, 400];
+
+
+function setup() {
+  createCanvas(700, 500);
+}
+
+function draw() {
+  background(numb[0], 51, 64);
+  stroke (numb[1],209,0);
+  strokeWeight (150);
+  line(650, -55, -100, 700);
+  fill (0, numb[2], 67);
+  stroke (0, numb[2], 67);
+  triangle(0,0, 0, 390, numb[3], 0)
+}
