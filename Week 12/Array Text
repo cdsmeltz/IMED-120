@@ -1,0 +1,23 @@
+var numb = [255, 32, 14, 30];
+
+function setup() {
+  createCanvas(2000, 2000);
+}
+
+function draw() {
+  background(numb[0], 0, 0);
+  
+
+
+textSize (numb[1]);
+textStyle (BOLDITALIC);
+textFont('Georgia');
+
+text("Harrisburg University", numb[3], numb[3])
+
+textSize (numb [3]);
+textStyle (BOLDITALIC);
+textFont ('Times New Roman');
+text ("Hello, my name is Chad Smeltz and I used to be the Director of Esports for Harrisburg University. Coding and programming is not something I'm used to, but I'm excited to learn more about it over time. This is my last semester as a senior and I am looking forward to graduating!", 30,70)
+
+}
