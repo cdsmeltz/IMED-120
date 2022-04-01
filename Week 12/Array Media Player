@@ -1,0 +1,84 @@
+// Note to Dr. Liu - Was able to get each individual button to play and pause on my screen for a total of five songs. Unable to see if it works when not local,
+please let me know if code is messed up. used mp3's off my computer for songs in my library.
+
+var numb = [0.4, 400]
+
+let button;
+function preload() {
+ mySoundone = loadSound('Cherry.mp3');
+}
+let buttontwo;
+function preload() {
+ mySoundtwo = loadSound('Spirited Away.mp3')
+}
+let buttonthree;
+function preload() {
+ mySoundthree = loadSound('Fire Emblem.mp3')
+}
+let buttonfour;
+function preload() {
+ mySoundfour = loadSound ('Lost Ark.mp3')
+}
+let buttonfive;
+function preload() {
+ mySoundfive = loadSound ('Drop It Like Its Hot.mp3')
+}
+
+function setup() {
+  createCanvas(numb[1],numb[1]);
+  button = createButton('Play/Pause Cherry');
+  buttontwo = createButton('Play/Pause Spirited Away')
+  buttownthree = createButton('Play/Pause Fire Emblem')
+  buttonfour= createButton('Play/Pause Lost Ark')
+  buttonfive = createButton('Play/Pause Drop It Like Its Hot')
+  
+  button.mousePressed(playPauseone);
+  buttontwo.mousePressed(playPausetwo);
+  buttonthree.mousePressed(playPausethree);
+  buttonfour.mousePressed(playPausefour);
+  buttonfive.mousePressed(playPausefive);
+}
+function playPauseone(){}
+  if (!mySoundone.isPlaying()){
+    mySoundone.play();
+    mySoundone.setVolume(numb[0]);
+  }
+ else {
+    mySoundone.pause();
+  }
+  
+  function playPausetwo(){}
+  if (!mySoundtwo.isPlaying()){
+    mySoundtwo.play();
+    mySoundtwo.setVolume(numb[0]);
+  }
+ else {
+    mySoundtwo.pause();
+  }
+    
+    function playPausethree(){}
+  if (!mySoundthree.isPlaying()){
+    mySoundthree.play();
+    mySoundthree.setVolume(numb[0]);
+  }
+ else {
+    mySoundthree.pause();
+  }
+      
+      function playPausefour(){}
+  if (!mySoundfour.isPlaying()){
+    mySoundfour.play();
+    mySoundfour.setVolume(numb[0]);
+  }
+ else {
+    mySoundfour.pause();
+  }
+        
+        function playPausefive(){}
+  if (!mySoundfive.isPlaying()){
+    mySoundfive.play();
+    mySoundfive.setVolume(numb[0]);
+  }
+ else {
+    mySoundfive.pause();
+  }
