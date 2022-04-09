@@ -1,0 +1,70 @@
+var sound1 = loadSound ('sound1.mp3')
+var sound2 = loadSound ('sound2.mp3')
+var sound3 = loadSound ('sound3.mp3')
+var sound4 = loadSound ('sound4.mp3')
+var sound5 = loadSound ('sound5.mp3')
+var sound6 = loadSound ('sound6.mp3')
+var sound7 = loadSound ('sound7.mp3')
+
+function setup() {
+  createCanvas(700, 300);
+}
+
+function draw() {
+  
+  background(220);
+  
+  //LOOPED WHITE KEYS
+  var x = 0;
+  while (x< width){
+  fill(255,255,255);
+  rect(x, 20, 50, 200);
+   x = x + 50;
+    
+  fill (0,0,0);
+  rect(25,20,45,120);
+  rect(80,20,45,120); 
+  rect(175,20,45,120);
+  rect(230,20,45,120);
+  rect(285,20,45,120);
+  rect(380,20,45,120);
+  rect(435,20,45,120);
+  rect(530,20,45,120);
+  rect(585,20,45,120);
+  rect(640,20,45,120);
+  }
+  
+ function mousePressed()
+{
+ 
+ if (mouseX > 25 && mouseX < 20 && mouseY > y && mouseY < 120)
+ { 
+ sound1.play();
+ }
+ if (mouseX > 80 && mouseX < 20 && mouseY > y && mouseY < 120)
+ {
+ sound2.play();
+ }
+ if (mouseX > 175 && mouseX < 20 && mouseY > y && mouseY < 120)
+ {
+ sound3.play();
+ }
+ if (mouseX > 230 && mouseX < 20 && mouseY > y && mouseY < 120)
+ {
+ sound4.play();
+ }
+ if (mouseX > 285 && mouseX < 20 && mouseY > y && mouseY < 120)
+ {
+ sound5.play();
+ }
+ if (mouseX > 380 && mouseX < 20 && mouseY > y && mouseY < 120)
+ {
+ sound6.play();
+ }
+ if (mouseX > 435 && mouseX < 20 & mouseY > y && mouseY < 120)
+ {
+ sound7.play();
+ }
+  
+textSize(32);
+text('Press 'A, S, D, F, G, H, J, K, L', 600, 250);
