@@ -1,0 +1,49 @@
+var circle1 = 400;
+var circle2 = 400;
+var circleSize = 60;
+var score = 0;
+
+let timer = 30;
+let button;
+function setup() {
+  createCanvas(800, 800);
+  button = createButton ('Reset Score');
+  button.position(0,0);
+  button.mousePressed(resetScore);
+  textSize(20);
+  textAlign(CENTER, CENTER);
+}
+
+function draw() {
+  background(220);
+  
+  FirstLevel();
+
+  text(("Get score to 50 before time runs out! SCORE: " + score),width/2,60);
+  
+  text(timer, width/2,100);
+  
+  if (frameCount % 60 == 0 && timer > 0){
+    timer --;
+}
+  if (timer == 0){
+    text("GAME OVER, CLICK BUTTON TO RESTART", width/2, height*0.5);
+  }
+}
+function FirstLevel(){
+  text("Hover mouse over ball to increase score", width/2, height-60);
+  var distance = dist(circle1,circle2,mouseX,mouseY);
+  if(distance < circleSize/2){
+    circle1 = random(width);
+    circle2 = random(height);
+    score = score + 1;
+  }
+  
+  ellipse(circle1,circle2, circleSize);
+  
+}
+
+function resetScore() {
+  score = 0;
+  timer = 30;
+}
