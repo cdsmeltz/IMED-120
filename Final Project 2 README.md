@@ -10,8 +10,13 @@ This process will continue to occur until: WIN: Score reaches 50 before timer re
 ADDITIONS TO FINAL PROJECT II:
 
 -Created a menu with a "Start Game" functionality that allows the user to make the timer start from 60, thus starting the game;
+
 -Finalized "Reset Score" button to reset score in addition to restarting the timer;
+
 -Added Green Victory/Win screen if user hits 50 points, makes it very easy to see;
+
 -Changed Defeat/Loss text;
+
 -Changed game to be playable for 1 minute, up from 30 seconds;
+
 -Changed text on goal of the game to fit new timer;
